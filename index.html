@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <header>
+                <img src="img/Vector.png" alt="Logo" class="logo">
+            </header>
+
+            <main>
+                <div class="text-container">
+                    <section>
+                        <textarea placeholder="Ingrese el texto aqui" class="text-area" onkeyup=(this.value)></textarea>
+                        <p><span>! </span> Sólo letras minúsculas y sin acentos</p>
+                    </section>
+                    <section class="buttons">
+                        <button type="button" class="button-encrypt">Encriptar</button>
+                        <button type="button" class="button-decrypt">Desencriptar</button>
+                        <button type="button" class="button-reset">Resetear</button>
+                    </section>
+                </div>
+        </div>
+        <div class="right-container">
+            <div class="decryption-container">
+                <div id="message">
+                    <div class="message-not-found">
+                        <img src="img/person.png" alt="Persona realizando una busqueda" class="message-image">
+                    </div>
+                    <h2 class="message-title">Ningun mensaje fue encontrado</h2>
+                    <p class="message-text">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div id="error">
+                    <h2 class="message-title">El mensaje no pudo ser procesado</h2>
+                    <p class="message-text">Por favor revisa que no hayas incluido ninguna letra mayúscula, acento y/o
+                        caracteres especiales.</p>
+                </div>
+                <div id="response"></div>
+                <div id="button-copy">
+                    <button type="button" class="button-copy">Copiar</button>
+                </div>
+            </div>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="github">
+            <span>Joaquin Ignacio Gonzalez - </span> <a href="https://github.com/jigcau89" target="_blank"> <img
+                    src="img/github_icon.png" alt="Github icon"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="js/script.js"></script>
